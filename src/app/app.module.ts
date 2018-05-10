@@ -13,6 +13,8 @@ import { UserBlockComponent } from './sidebar-user-block/user-block.component';
 import { SearchBlockComponent } from './sidebar-search-block/search-block.component';
 import { ContactsCategoriesComponent } from './sidebar-contacts-categories/contacts-categories.component';
 import { BirthdayComponent } from './sidebar-birthday/birthday.component';
+import { NewContactComponent } from './sidebar-new-contact/new-contact.component';
+import { ContactFormAvatarComponent } from './contact-form-avatar/contact-form-avatar.component';
 
 
 @NgModule({
@@ -27,7 +29,9 @@ import { BirthdayComponent } from './sidebar-birthday/birthday.component';
     UserBlockComponent,
     SearchBlockComponent,
     ContactsCategoriesComponent,
-    BirthdayComponent
+    BirthdayComponent,
+    NewContactComponent,
+    ContactFormAvatarComponent
   ],
   imports: [
     BrowserModule
