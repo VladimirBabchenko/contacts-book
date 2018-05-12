@@ -1,6 +1,7 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { Contacts } from '../mock-contacts';
 import { Contact } from '../contact.model';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-contacts',
@@ -12,12 +13,12 @@ export class ContactsComponent implements OnInit {
   @Output() onShowDetail = new EventEmitter();
   contacts = Contacts;
 
-  constructor() { }
+  constructor( ) { }
 
   ngOnInit() {
   }
 
-  showDetail(contact) {
-    this.onShowDetail.emit(contact);
-  }
+  // showDetail(contact) {
+  //   this.onShowDetail.emit(contact);
+  // }
 }

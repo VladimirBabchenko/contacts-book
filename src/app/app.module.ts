@@ -16,6 +16,8 @@ import { BirthdayComponent } from './sidebar-birthday/birthday.component';
 import { NewContactComponent } from './sidebar-new-contact/new-contact.component';
 import { ContactFormAvatarComponent } from './contact-form-avatar/contact-form-avatar.component';
 
+import { AppRoutingModule } from './app-routing.module';
+import { PageNotFoundComponent } from './page-not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -31,10 +33,12 @@ import { ContactFormAvatarComponent } from './contact-form-avatar/contact-form-a
     ContactsCategoriesComponent,
     BirthdayComponent,
     NewContactComponent,
-    ContactFormAvatarComponent
+    ContactFormAvatarComponent,
+    PageNotFoundComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
