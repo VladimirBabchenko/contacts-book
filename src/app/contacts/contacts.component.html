@@ -3,7 +3,8 @@
 	<app-content-header-menu></app-content-header-menu>
 	<section class="contacts" *ngFor="let contact of contacts">
 		<div class="contact-card">
-			<button class="contact-card__btn" (click)="showDetail(contact)">
+			<button class="contact-card__btn" 
+				(click)="showDetail(contact)">
 				<div class="contact-card__avatar"></div>
 				<div class="contact-card__info">
 					<span class="contact-card__name">{{contact.name}} {{contact.surname}}</span>

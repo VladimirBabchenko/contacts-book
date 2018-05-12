@@ -18,7 +18,7 @@ export class ContactsComponent implements OnInit {
   ngOnInit() {
   }
 
-  // showDetail(contact) {
-  //   this.onShowDetail.emit(contact);
-  // }
+  showDetail(contact) {
+    this.onShowDetail.emit(contact);
+  }
 }
