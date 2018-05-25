@@ -1,4 +1,4 @@
-import { Component, OnInit, Output } from '@angular/core';
+import { Component, OnInit, Output, Input } from '@angular/core';
 import { Contact } from "../contact.model";
 
 @Component({
@@ -7,6 +7,7 @@ import { Contact } from "../contact.model";
   styleUrls: ['./contacts-view.component.scss']
 })
 export class ContactsViewComponent implements OnInit {
+  @Input() showingForm: boolean;
 
   selectedContact: Contact;
 
